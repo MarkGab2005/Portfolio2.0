@@ -20,6 +20,7 @@ body{
 .logo{margin:0;font-size:1.25rem}
 .nav a{margin-left:1rem;color:var(--muted);text-decoration:none}
 .hero{background:linear-gradient(180deg, rgba(0,102,255,0.06), transparent);padding:3rem 0;text-align:center}
+.hero-image{width:150px;height:150px;border-radius:50%;margin-bottom:1.5rem;box-shadow:0 8px 20px rgba(0,102,255,0.2)}
 .hero .lead{color:var(--muted);max-width:60ch;margin:0 auto 1rem}
 .btn{display:inline-block;padding:.6rem 1rem;background:var(--accent);color:#fff;border-radius:6px;text-decoration:none}
 .about h3,.projects h3,.contact h3{margin-top:0}
