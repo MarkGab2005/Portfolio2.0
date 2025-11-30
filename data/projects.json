@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "title": "Project Alpha",
+      "description": "A short description of Project Alpha. Built with HTML, CSS and JavaScript.",
+      "link": "#",
+      "image": "assets/thumb1.svg"
+    },
+    {
+      "title": "Project Beta",
+      "description": "A small web app demonstrating a focused interaction and responsive UI.",
+      "link": "#",
+      "image": "assets/thumb2.svg"
+    },
+    {
+      "title": "Project Gamma",
+      "description": "Experiment exploring performance improvements and accessibility.",
+      "link": "#",
+      "image": "assets/thumb3.svg"
+    }
+  ]
+}

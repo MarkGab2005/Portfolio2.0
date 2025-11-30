@@ -1,0 +1,41 @@
+/* Simple, clean portfolio styles */
+:root{
+  --bg:#f7f7fb;
+  --card:#ffffff;
+  --accent:#0066ff;
+  --text:#12202b;
+  --muted:#5a6b75;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans",sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+}
+.container{max-width:900px;margin:0 auto;padding:1.25rem}
+.site-header{background:transparent;padding:.75rem 0}
+.logo{margin:0;font-size:1.25rem}
+.nav a{margin-left:1rem;color:var(--muted);text-decoration:none}
+.hero{background:linear-gradient(180deg, rgba(0,102,255,0.06), transparent);padding:3rem 0;text-align:center}
+.hero .lead{color:var(--muted);max-width:60ch;margin:0 auto 1rem}
+.btn{display:inline-block;padding:.6rem 1rem;background:var(--accent);color:#fff;border-radius:6px;text-decoration:none}
+.about h3,.projects h3,.contact h3{margin-top:0}
+.skills{display:flex;gap:.5rem;flex-wrap:wrap;padding:0;list-style:none;margin:.5rem 0 0}
+.skills li{background:var(--card);padding:.4rem .6rem;border-radius:6px;font-size:.9rem;color:var(--muted);box-shadow:0 1px 2px rgba(16,24,40,0.03)}
+.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}
+.project{background:var(--card);padding:1rem;border-radius:8px;box-shadow:0 6px 18px rgba(16,24,40,0.04)}
+.project h4{margin:.25rem 0}
+.link{color:var(--accent);text-decoration:none}
+.project img{width:100%;height:140px;object-fit:cover;border-radius:6px;margin-bottom:.5rem}
+.site-footer{padding:1rem 0;color:var(--muted);text-align:center;margin-top:2rem}
+@media (max-width:800px){
+  .project-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:520px){
+  .project-grid{grid-template-columns:1fr}
+  .nav a{display:none}
+  .hero{padding:2rem 0}
+}

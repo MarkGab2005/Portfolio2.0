@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Portfolio — Your Name</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Castillo Markgabriel</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Hi — I'm Castillo Markgabriel</h2>
+        <p class="lead">i alway win my 50/50</p>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <section id="about me" class="about container">
+      <h3>About me</h3>
+      <p>
+      <ul class="skills">I like games like </p>
+        <li>honkai impact 3rd &amp; honkai impact</li>
+        <li>Genshin impact</li>
+        <li>Mobile Legend &amp; Call of Duty Mobile</li>
+        <li> Wuthering waves &amp; Tekken</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="projects container">
+      <h3>Projects</h3>
+
+      <div class="import-controls" aria-hidden="false">
+        <label for="data-file" class="btn" title="Portfolio 2.0">Portfolio 2.0</label>
+        <input id="data-file" type="file" accept="application/json,text/csv,.csv" style="display:none" />
+        <button id="load-sample" class="btn" style="margin-left:0.5rem">Load sample data</button>
+        <span id="import-status" style="margin-left:0.75rem;color:var(--muted)"></span>
+        <div id="drop-zone" style="margin-top:.75rem;padding:.75rem;border:1px dashed rgba(16,24,40,0.06);border-radius:8px;color:var(--muted)">Drag & drop a JSON or CSV file here</div>
+      </div>
+
+      <div id="project-grid" class="project-grid" aria-live="polite">
+        <!-- Projects will be rendered here from imported data or sample file -->
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h3>Contact</h3>
+      <p>If you'd like to talk, email me at <a href="markgabrielcastillo36@gmail.com">markgabrielcastillo36@gmail.com</a> or connect on <a href="#">LinkedIn</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Castillo Markgabriel — play games with me .</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
